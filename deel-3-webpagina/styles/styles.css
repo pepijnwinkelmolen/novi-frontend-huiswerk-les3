@@ -1,1 +1,126 @@
-/*Schrijf hier jouw css*/
+
+
+/**************************** RESET *********************************/
+
+* {
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+    color: #030027;
+    padding: 0;
+    margin: 0;
+}
+
+
+/************************** PROPERTIES *******************************/
+
+
+h1, h3, p {
+    color: #030027;
+}
+
+article p {
+    font-size: 18px;
+    text-align: center;
+    align-self: flex-end;
+}
+
+h2, a {
+    color: #F2F3D9;
+}
+
+a {
+    text-align: center;
+}
+
+
+/************************* POSITIONING ******************************/
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #030027;
+    flex: 0 0 80px;
+}
+
+nav {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    column-gap: 26px;
+}
+
+nav * {
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    margin: 26px;
+}
+
+nav:last-child {
+    margin-right: 40px;
+}
+
+header h2 {
+    margin: 26px;
+}
+
+.main-container {
+    flex-basis: 100vw;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.main-item {
+    flex-basis: 17vw;
+    min-width: 40px;
+}
+
+main {
+    flex-basis: 66vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-container * {
+    align-self: center;
+}
+
+.article-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 40px;
+}
+
+.article-container article {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    max-width: 280px;
+    height: 350px;
+
+    background-color: #C16E70;
+    padding: 20px;
+    border-radius: 5px;
+}
