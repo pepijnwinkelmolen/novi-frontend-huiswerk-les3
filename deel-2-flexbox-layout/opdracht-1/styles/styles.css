@@ -1,1 +1,39 @@
 /*Schrijf hier jouw CSS*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    min-height: 127px;
+    flex: 1 1;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: 7 1;
+}
+
+main article {
+    order: 1;
+    flex: 7 1 100px;
+    /*max-height: 665px;*/
+}
+
+main nav {
+    order: 3;
+    flex: 2 1 100px;
+}
+
+main aside {
+    order: 2;
+    flex: 2 1 100px;
+}
+
+footer {
+    min-height: 127px;
+    flex: 1 1;
+}
